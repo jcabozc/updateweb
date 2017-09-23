@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-### usage: fab -f update.py  get_version:source_type=web,source_dir=/var/lib/jenkins/workspace/alarm,name=app deploy
+### usage: fab  -f ${JENKINS_HOME}/scripts/update.py get_version:source_type=web,source_dir=${WORKSPACE},name='alarm' deploy update_db
 # by stark 
 
 from fabric.api import *
